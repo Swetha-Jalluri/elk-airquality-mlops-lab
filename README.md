@@ -334,7 +334,7 @@ curl http://localhost:9200
 # Expected: JSON response with cluster information
 ```
 
-![Elasticsearch Running](screenshots/elasticsearch-response.png)
+<img width="1470" height="792" alt="Screenshot 2025-11-30 at 8 22 59 PM" src="https://github.com/user-attachments/assets/b5695f29-af12-419e-b441-34da5f37c437" />
 *Screenshot showing Elasticsearch cluster information*
 
 ```bash
@@ -519,7 +519,7 @@ python src/api_service.py
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-![API Service Running](screenshots/api-service-running.png)
+<img width="1469" height="876" alt="Screenshot 2025-11-30 at 9 04 55 PM" src="https://github.com/user-attachments/assets/57f0109e-1eef-465f-adc7-b9f6d81125bf" />
 *Screenshot showing FastAPI service started successfully*
 
 **The API is now ready to serve predictions!**
@@ -552,7 +552,7 @@ open http://localhost:5601
 7. Select **@timestamp** as the Time field
 8. Click **Create index pattern**
 
-![Index Pattern Creation](screenshots/kibana-index-pattern.png)
+<img width="1470" height="792" alt="Screenshot 2025-11-30 at 8 31 58 PM" src="https://github.com/user-attachments/assets/8ff718c4-6752-436f-83e4-9d73bb820a45" />
 *Screenshot: Creating the airquality-* index pattern with 55 fields*
 
 #### Step 3: View Logs in Discover
@@ -562,8 +562,6 @@ open http://localhost:5601
 3. Change time range to **Last 7 days** (top-right)
 4. You should see all training logs with metrics!
 
-![Kibana Discover View](screenshots/kibana-discover-logs.png)
-*Screenshot: Training logs showing model metrics in Kibana Discover*
 
 **Available fields in logs:**
 - `model_name` - Which model (logistic_regression, random_forest, xgboost)
@@ -588,7 +586,7 @@ The project includes a comprehensive dashboard with 4 visualizations:
    - **Model Metrics Summary Table** - Complete metrics comparison
    - **Training Samples** - Dataset size metric
 
-![Kibana Dashboard](screenshots/kibana-dashboard-complete.png)
+<img width="1467" height="740" alt="Screenshot 2025-11-30 at 8 46 04 PM" src="https://github.com/user-attachments/assets/08022af1-6672-4081-9aee-b8e3032ab0ef" />
 *Screenshot: Complete Kibana dashboard with 4 visualizations showing model comparison*
 
 **Dashboard Insights:**
@@ -605,9 +603,6 @@ open http://localhost:5001
 
 # Or manually navigate to: http://localhost:5001
 ```
-
-![MLflow Experiment Tracking](screenshots/mlflow-experiments.png)
-*Screenshot: MLflow UI showing experiment tracking with parameters and metrics*
 
 **In MLflow you can:**
 - View all experiment runs
@@ -679,7 +674,7 @@ curl -X POST http://localhost:8000/predict \
 }
 ```
 
-![API Prediction Response](screenshots/api-prediction-response.png)
+<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/bf8d99ea-d264-4cf0-a1a6-1a6a2059802b" />
 *Screenshot: Successful API prediction with 99.95% confidence and 4.38ms latency*
 
 **Interpretation:**
@@ -1360,38 +1355,6 @@ XGBClassifier(
 
 ---
 
-## Screenshots
-
-### 1. Kibana Index Pattern
-![Kibana Index Pattern](screenshots/kibana-index-pattern.png)
-*55 fields detected in airquality-* index pattern with @timestamp as time field*
-
-### 2. Kibana Discover - Training Logs
-![Kibana Discover](screenshots/kibana-discover-logs.png)
-*86 log hits showing training pipeline execution with all model metrics*
-
-### 3. Kibana Dashboard
-![Kibana Dashboard](screenshots/kibana-dashboard-complete.png)
-*Comprehensive 4-panel dashboard showing:*
-- *Model Performance Comparison (F1 scores)*
-- *Training Time Analysis (efficiency metrics)*
-- *Model Metrics Summary Table (complete comparison)*
-- *Training Samples Count (7,460 samples)*
-
-### 4. Elasticsearch Health
-![Elasticsearch Response](screenshots/elasticsearch-response.png)
-*Elasticsearch cluster responding with version 7.16.2 and health status*
-
-### 5. API Prediction
-![API Response](screenshots/api-prediction-response.png)
-*Successful prediction with 99.95% confidence and 4.38ms latency*
-
-### 6. MLflow Experiments
-![MLflow Tracking](screenshots/mlflow-experiments.png)
-*MLflow UI showing experiment tracking with 19 metrics and 220 parameters logged*
-
----
-
 ## Command Reference
 
 ### Quick Reference Card
@@ -1497,53 +1460,3 @@ docker-compose down
 - [XGBoost](https://xgboost.readthedocs.io/)
 - [Pandas](https://pandas.pydata.org/)
 - [NumPy](https://numpy.org/)
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- **Professor Ramin Mohammadi** - Course instruction and guidance
-- **UCI Machine Learning Repository** - Air Quality dataset
-- **Elastic.co** - ELK stack open-source software
-- **Apache Software Foundation** - Kafka streaming platform
-- **Databricks** - MLflow experiment tracking platform
-- **Northeastern University** - MLOps course and resources
-
----
-
-## Contact
-
-**Swetha Jalluri**  
-Northeastern University  
-MLOps Course - Fall 2024
-
-**Repository:** https://github.com/Swetha-Jalluri/elk-airquality-mlops-lab
-
----
-
-## Contributing
-
-This is a course project submission. If you're a student working on similar assignments:
-
-1. Fork this repository
-2. Understand the architecture and implementation
-3. Modify for your specific requirements
-4. Credit this work if you use any code
-
-**Please do not directly copy for course submissions** - use as a learning reference.
-
----
-
-**⭐ If you found this project helpful or learned something new, please star the repository!**
-
-**Questions?** Check the [Troubleshooting](#troubleshooting) section or review the documentation links above.
-
----
-
-*Last Updated: November 30, 2024*
