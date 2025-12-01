@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment Variables
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Models (large files)
+models/*.pkl
+models/*.joblib
+
+# Data (large files)
+data/raw/*.csv
+data/processed/*.csv
+
+# Logs
+*.log
+logstash/*.log
+
+# Docker
+*.pid
+
+# Mac
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
