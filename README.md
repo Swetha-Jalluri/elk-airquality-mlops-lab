@@ -335,7 +335,6 @@ curl http://localhost:9200
 ```
 
 <img width="1470" height="792" alt="Screenshot 2025-11-30 at 8 22 59 PM" src="https://github.com/user-attachments/assets/b5695f29-af12-419e-b441-34da5f37c437" />
-*Screenshot showing Elasticsearch cluster information*
 
 ```bash
 # Test Kibana (opens in browser)
@@ -520,7 +519,6 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
 <img width="1469" height="876" alt="Screenshot 2025-11-30 at 9 04 55 PM" src="https://github.com/user-attachments/assets/57f0109e-1eef-465f-adc7-b9f6d81125bf" />
-*Screenshot showing FastAPI service started successfully*
 
 **The API is now ready to serve predictions!**
 
@@ -553,7 +551,6 @@ open http://localhost:5601
 8. Click **Create index pattern**
 
 <img width="1470" height="792" alt="Screenshot 2025-11-30 at 8 31 58 PM" src="https://github.com/user-attachments/assets/8ff718c4-6752-436f-83e4-9d73bb820a45" />
-*Screenshot: Creating the airquality-* index pattern with 55 fields*
 
 #### Step 3: View Logs in Discover
 
@@ -587,7 +584,6 @@ The project includes a comprehensive dashboard with 4 visualizations:
    - **Training Samples** - Dataset size metric
 
 <img width="1467" height="740" alt="Screenshot 2025-11-30 at 8 46 04 PM" src="https://github.com/user-attachments/assets/08022af1-6672-4081-9aee-b8e3032ab0ef" />
-*Screenshot: Complete Kibana dashboard with 4 visualizations showing model comparison*
 
 **Dashboard Insights:**
 - XGBoost achieved perfect 1.0 F1 score
@@ -675,7 +671,7 @@ curl -X POST http://localhost:8000/predict \
 ```
 
 <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/bf8d99ea-d264-4cf0-a1a6-1a6a2059802b" />
-*Screenshot: Successful API prediction with 99.95% confidence and 4.38ms latency*
+
 
 **Interpretation:**
 - **Prediction:** Unhealthy air quality
